@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "item",
-  "amount"
+  "quantity",
+  "price_per_item"
  ],
  "fields": [
   {
@@ -19,17 +20,23 @@
    "reqd": 1
   },
   {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
    "default": "0",
-   "fieldname": "amount",
+   "fieldname": "price_per_item",
    "fieldtype": "Currency",
-   "label": "Amount"
+   "label": "Price per Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-17 09:43:48.142587",
+ "modified": "2025-07-18 10:52:38.116646",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket Add-on Item",
